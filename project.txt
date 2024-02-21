@@ -1,0 +1,32 @@
+chat gtp금지, chat gtp금지, chat gtp금지
+
+날짜	하루 진행할 부분			하루 목표 달성률(100%)		전체 완성달성률(100%)
+2-21-수	html head, main, footer구분		- 3시간 80%			3%
+	head html, 이미지 추가		- 색상변화 불가능 20%		
+2-22-목	head 더보기(우선), 채용(후순위)	
+2-23-금	head 마우스 올리면 색변경		
+2-24-토	main 첫번째 html, css, 이미지	
+	마우스 올리면 태두리 색 변경		
+2-25-일	main 2번째 banner 이미지, css	
+2-26-월	main 2번째 banner 자동으로
+	시간에 맞춰	
+2-27-화	3번째 banner html, css		
+2-28-수	main 3번째 banner			
+2-29-목	main 4번째 html, css		
+3-01-금	5번째 3번째 banner 참고하여 생성	
+3-02-토	마지막 main생성			
+3-03-일	footer html, css		
+3-04-월	로그인 head 그대로사용		
+3-05-화	main css, html(text만)			
+3-06-수	약관 전체동의			
+3-07-목	로그인 페이지(vue.js)		
+
+목표 기간 3/7
+
+
+
+
+오래걸리는 것 or 어려운것같은 거
+채용, 더보기, 약관 전체동의, banner
+클릭하여 이동하면 #으로
+회원가입정도만(?)

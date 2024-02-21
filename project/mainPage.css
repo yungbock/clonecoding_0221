@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+a{
+    margin: 0;
+    padding: 0;
+    text-decoration-line:none;
+    color: rgb(131, 131, 131);
+}
+header{
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid rgb(200, 200, 200);
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+li{
+    list-style: none;
+}
+.header-Logo{ /*임시용*/
+    object-fit: contain;
+    width: 32px;
+}
+.header-Bar{
+    margin: 0;
+    padding: 0;
+    margin-left: 60px;
+    display: flex;
+}
+.header-Bar-Text-drop,  /*drop과 그냥 text 공통 부분*/
+.header-Bar-Text{
+    position: relative;
+    top:35%; 
+    margin-left: 0px;
+    margin-right: 30px;
+}
+
+/* header-Drop css*/
+.header-Drop{
+    display: flex;
+}
+.material-symbols-outlined{ /* 메뉴 위치조정*/
+    position: relative;
+    top:30%; 
+}
+
+.header-Bar-Text-drop{
+    display: inline-block;
+}
+.drop-down{ /* 드롭박스 생성 */
+    display: none;
+}
+.header-Bar-Text-drop:hover .drop{
+    width: 500px;
+    height: 100px;
+    background-color: black;
+}
+/*로그인 회원가입*/
+.header-Bar-right{
+    display: flex;
+    justify-content: center;
+    margin-left: 60px;
+}
+.login{
+    position: relative;
+    top:35%; 
+    margin-left: 0px;
+    margin-right: 30px;
+}
+.header-find{
+    margin-right: 10px;
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    border: 1px solid white; 
+    top:20%
+}
+#icon2{
+    position: absolute;
+    left: 7px;
+    top: 7px;
+}
+.login1,
+.login2{
+    position: relative;
+    top:28%; 
+    margin-left: 0px;
+    margin-right: 10px;
+    border: 1px solid rgb(131, 131, 131);
+    border-radius: 10px;
+    font-size: 12px;
+    background-color: white;
+    height: 30px;
+    padding: 5px 10px;
+}
+.login1{
+    color: blue;
+}
+
+
+
+
+
+
+
+
+/* main */
+main{
+    position: relative;
+}
+.main-no1{
+    margin-top: 40px;
+    padding: 0;
+    justify-content: center;
+}
+.no1{
+    margin: 0;
+    padding: 0;
+}
