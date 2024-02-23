@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MainPage</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./mainPage.css">
+    <script defer src="./mainPage.js"></script> <!-- 해더 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <img class="header-Logo" src="./img/imsi.jpg" alt="">
+        <ul class="header-Bar">
+            <ul class="header-Drop">
+                <li class="header-Bar-Icon1">
+                    <span class="material-symbols-outlined">menu</span>
+                <li class="header-Bar-click">
+                    <span class="header-Bar-Text-drop">
+                        <a href="#">채용</a>
+                    </span>     
+                        <ul class="drop-down"> 
+                            <li>
+                                <a href="#">직군전체</a>
+                            </li>
+                            <li>
+                                <a href="#">개발</a>
+                            </li>
+                            <li>
+                                <a href="#">경영·비지니스</a>
+                            </li>
+                            <li>
+                                <a href="#">마케팅 광고</a>
+                            </li>
+                            <li>
+                                <a href="#">디자인</a>
+                            </li>
+                            <li>
+                                <a href="#">영업</a>
+                            </li>
+                            <li>
+                                <a href="#">고객서비스·리테일</a>
+                            </li>
+                            <li>
+                                <a href="#">미디어</a>
+                            </li>
+                            <li>
+                                <a href="#">엔지니어링·설계</a>
+                            </li>
+                            <li>
+                                <a href="#">HR</a>
+                            </li>
+                            <li>
+                                <a href="#">게임 제작</a>
+                            </li>
+                            <li>
+                                <a href="#">금융</a>
+                            </li>
+                            <li>
+                                <a href="#">교육</a>
+                            </li>
+                            <li>
+                                <a href="#">의료·제약·바이오</a>
+                            </li>
+                            <li>
+                                <a href="#">물류·무역</a>
+                            </li>
+                            <li>
+                                <a href="#">법률·법집행기관</a>
+                            </li>
+                            <li>
+                                <a href="#">식·음료</a>
+                            </li>
+                            <li>
+                                <a href="#">공공·복지</a>
+                            </li>
+                        </ul>
+            </ul>
+            </li>
+            <li class="header-Bar-click" >
+                <span class="header-Bar-Text"><a href="#">커리어</a></span></li>
+            <li class="header-Bar-click">
+                <span class="header-Bar-Text"><a href="#">소셜</a></span>
+            </li>
+            <li class="header-Bar-click">
+                <span class="header-Bar-Text"><a href="#">이력서</a></span>
+            </li>
+            <li class="header-Bar-click">
+                <span class="header-Bar-Text"><a href="#">프리랜서</a></span>
+            </li>
+            <li class="header-Bar-click">
+                <span class="header-Bar-Text"><a href="#">더보기</a></span>
+            </li>
+        </ul>
+        <nav class="header-Bar-right">
+            <button class="header-find"  onmouseover="change1(this)" onmouseout="change2(this)">
+            <span id="icon2" class="material-symbols-outlined">
+                search
+            </span>
+            </button>
+            <button class="login1" onmouseover="changeButton1(this)" onmouseout="changeButton2(this)">
+                <a href="#">회원가입/ 로그인</a></button>
+            <button class="login2" onmouseover="changeButton1(this)" onmouseout="changeButton2(this)">
+                <a href="#">기업 서비스</a></button>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article class="main-no1">
+                <ul class="no1">
+                    <li class="no1-bar">
+                        <ul class="no1-bar-sose">
+                            <li class="no1-bar-sose-icon"><span class="material-icons md-48"> menu_book</span></li>
+                            <li class="no1-bar-sose-text-on 1"><span>채용공고</span></li>
+                        </ul>
+                    </li>
+                    <li class="no1-bar">
+                        <ul class="no1-bar-sose">
+                            <li class="no1-bar-sose-icon"><span class="material-icons md-48">description</span></li>
+                            <li class="no1-bar-sose-text-on 2"><span>이력서 관리</span></li>
+                        </ul>
+                    </li>
+                    <li class="no1-bar">
+                        <ul class="no1-bar-sose">
+                            <li class="no1-bar-sose-icon"><span class="material-icons md-48">auto_mode</span></li>
+                            <li class="no1-bar-sose-text-on 3"><span>커리어 조회</span></li>
+                        </ul>
+                    </li>
+                    <li class="no1-bar">
+                        <ul class="no1-bar-sose">
+                            <li class="no1-bar-sose-icon"><span class="material-icons md-48">autorenew</span></li>
+                            <li class="no1-bar-sose-text-on 4"><span>지원 현황</span></li>
+                        </ul>
+                    </li>
+                    <li class="no1-bar">
+                        <ul class="no1-bar-sose">
+                            <li class="no1-bar-sose-icon"><span class="material-icons md-48">psychology </span></li>
+                            <li class="no1-bar-sose-text-on 5"><span>면접 코칭받기</span></li>
+                        </ul>
+                    </li>
+                    <li class="no1-bar">
+                        <ul class="no1-bar-sose">
+                            <li class="no1-bar-sose-icon"><span class="material-icons md-48">auto_awesome</span></li>
+                            <li class="no1-bar-sose-text-on 6"><span>다음 커리어 찾기</span></li>
+                        </ul>
+                    </li>
+                    <li class="no1-bar">
+                        <ul class="no1-bar-sose">
+                            <li class="no1-bar-sose-icon"><span class="material-icons md-48">apartment</span></li>
+                            <li class="no1-bar-sose-text-on 7"><span>나만의 회사 찾기</span></li>
+                        </ul>
+                    </li>
+                    <li class="no1-bar">
+                        <ul class="no1-bar-sose">
+                            <li class="no1-bar-sose-icon"><span class="material-icons md-48">signal_cellular_alt</span></li>
+                            <li class="no1-bar-sose-text-on 8"><span>직군별 연봉</span></li>
+                        </ul>
+                    </li>
+                    <li class="no1-bar">
+                        <ul class="no1-bar-sose">
+                            <li class="no1-bar-sose-icon"><span class="material-icons md-48">paid</span></li>
+                            <li class="no1-bar-sose-text-on 9"><span>원티드 포인트</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+            <article class="main-no2">
+                <div class="main-no2s">
+                    <ul class="no2">
+                        <li class="no2-button">
+                            <img class="no2-img" src="./img/poto1.avif" alt="#">
+                            <span class="no2-text1">하이퍼커넥트 AI 경력직 채용</span>
+                            <span class="no2-text2">엔지니어, PM 직군 모집 중 - 3월 3일까지</span>
+                        </li>
+                        <li class="no2-button">
+                            <img class="no2-img" src="./img/poto2.avif" alt="#">
+                            <span class="no2-text1">기아 IT 전문가 경력채용</span>
+                            <span class="no2-text2">지원기간 : 2.29 오후12시까지</span>
+                        </li>
+                        <li class="no2-button">
+                            <img class="no2-img" src="./img/poto3.jpg" alt="#">
+                            <span class="no2-text1">최근 100억 이상 투자 받은 기업</span>
+                            <span class="no2-text2">채용 중 포지션 확인하기</span>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <article class="main-no3">
+                <div class="main-no3s">
+                    <a href="#">#재택근무</a>
+                    <ul class="no3-button">
+                        <li class="no3-hidden" >
+                            <img class="no3-img" src="./img/pot1.webp" alt="#">
+                            <img class="no3-img" src="./img/pot2.webp" alt="#">
+                            <img class="no3-img" src="./img/pot3.jpg" alt="#">
+                        </li>
+                        <li class="no3-hidden">
+                            <img class="no3-img" src="./img/pto4.jpg" alt="#">
+                            <img class="no3-img" src="./img/pot4.jpg" alt="#">
+                            <img class="no3-img" src="./img/pot6.jfif" alt="#">
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <article class="main-no4"></article>
+            <article class="main-no5"></article>
+            <article class="main-no6"></article>
+        </article>
+    </main>
+    <footer></footer>
+</body>
+</html>

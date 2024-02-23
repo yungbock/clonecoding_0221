@@ -114,9 +114,20 @@ li{
 /* main */
 main{
     position: relative;
+    margin : 0px;
 }
+section{
+    margin: 0px auto; 
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+}
+
 .main-no1{
-    margin-top: 40px;
+    margin: 0;
     padding: 0;
 }
 .no1{
@@ -128,24 +139,109 @@ main{
 .no1-bar{
     justify-content: center;
     padding: 0px;
-    margin: 0px 10px;
+    margin: 0px;
 }
 .no1-bar-sose{
     margin: 0px;
     padding: 0px;
-    border-radius: 50px ; 
     /* 클릭버튼 색상 변경 */
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 90px;
+    border-radius: 5px;
     background-color: wheat;
     
 }
 .no1-bar-sose-icon{
-    position: relative;
-    top:10px;
-    left:27px;
+    margin: 0;
+    padding: 10;
+    justify-content: center;
 }
-.material-icons.md-48 { font-size: 48px; } /* 구글 아이콘 크기 키움*/
+.material-icons.md-48 { /* 구글 아이콘 크기 키움*/
+    font-size: 48px; 
+    padding: 11px 31px;
+} 
 .no1-bar-sose-text-on{
+    text-align: center;
     font-size: 12px;
+}
+
+/* main 2번째 */
+/* .main-no2{
+} */
+.main-no2s{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    height: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+
+}
+.no2{
+    position: absolute;
+    display: flex;
+    width: 1000px;
+    margin: 0;
+    padding: 0;
+}
+.no2-button{
+    display: flex;   
+}
+.no2-img{
+    width: 1000px;
+    height: 300px;
+    border: 10px;
+}
+
+@font-face {
+    font-family: 'SejonghospitalBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/SejonghospitalBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+.no2-text1{
+    font-family: 'SejonghospitalBold';
+    font-size: 30px;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 10px;
+    color:white;
+}
+.no2-text2{
+    font-family: 'SejonghospitalBold';
+    font-size: 20px;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 10px;
+    color:white;
+}
+
+/* main-no3 */
+.main-no3{
+    margin-top: 40px;
+}
+.main-no3s{
+    position: relative;
+}
+div > a{
+    font-size: 24px;
+    font-family: 'SejonghospitalBold';
+    color:black;
+}
+.no3-button{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin: 10px 0px;
+    padding: 0px;
+}
+.no3-img{
+    width: 300px;
+    height: 200px;
+}
+.no3-hidden{
+    overflow: hidden;
+
 }
