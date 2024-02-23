@@ -96,15 +96,17 @@
             </li>
         </ul>
         <nav class="header-Bar-right">
-            <button class="header-find"  onmouseover="change1(this)" onmouseout="change2(this)">
+            <button class="header-find" onmouseover="change1(this)" onmouseout="change2(this)">
             <span id="icon2" class="material-symbols-outlined">
                 search
             </span>
             </button>
             <button class="login1" onmouseover="changeButton1(this)" onmouseout="changeButton2(this)">
                 <a href="#">회원가입/ 로그인</a></button>
-            <button class="login2" onmouseover="changeButton1(this)" onmouseout="changeButton2(this)">
-                <a href="#">기업 서비스</a></button>
+                <a href="#">
+                    <button class="login2" onmouseover="changeButton1(this)" onmouseout="changeButton2(this)">
+                    기업 서비스</button>
+                </a>
         </nav>
     </header>
     <main>
@@ -112,58 +114,76 @@
             <article class="main-no1">
                 <ul class="no1">
                     <li class="no1-bar">
-                        <ul class="no1-bar-sose">
-                            <li class="no1-bar-sose-icon"><span class="material-icons md-48"> menu_book</span></li>
-                            <li class="no1-bar-sose-text-on 1"><span>채용공고</span></li>
-                        </ul>
+                        <a href="">
+                            <ul class="no1-bar-sose" onmouseover="change1(this)" onmouseout="change2(this)">
+                                <li class="no1-bar-sose-icon"><span class="material-icons md-48"> menu_book</span></li>
+                                <li class="no1-bar-sose-text-on 1"><span>채용공고</span></li>
+                            </ul>
+                        </a>
                     </li>
                     <li class="no1-bar">
-                        <ul class="no1-bar-sose">
+                        <a href="">
+                        <ul class="no1-bar-sose" onmouseover="change1(this)" onmouseout="change2(this)">
                             <li class="no1-bar-sose-icon"><span class="material-icons md-48">description</span></li>
                             <li class="no1-bar-sose-text-on 2"><span>이력서 관리</span></li>
                         </ul>
+                    </a>
                     </li>
                     <li class="no1-bar">
-                        <ul class="no1-bar-sose">
+                        <a href="">
+                        <ul class="no1-bar-sose" onmouseover="change1(this)" onmouseout="change2(this)">
                             <li class="no1-bar-sose-icon"><span class="material-icons md-48">auto_mode</span></li>
                             <li class="no1-bar-sose-text-on 3"><span>커리어 조회</span></li>
                         </ul>
+                    </a>
                     </li>
                     <li class="no1-bar">
-                        <ul class="no1-bar-sose">
+                        <a href="">
+                        <ul class="no1-bar-sose" onmouseover="change1(this)" onmouseout="change2(this)">
                             <li class="no1-bar-sose-icon"><span class="material-icons md-48">autorenew</span></li>
                             <li class="no1-bar-sose-text-on 4"><span>지원 현황</span></li>
                         </ul>
+                    </a>
                     </li>
                     <li class="no1-bar">
-                        <ul class="no1-bar-sose">
+                        <a href="">
+                        <ul class="no1-bar-sose" onmouseover="change1(this)" onmouseout="change2(this)">
                             <li class="no1-bar-sose-icon"><span class="material-icons md-48">psychology </span></li>
                             <li class="no1-bar-sose-text-on 5"><span>면접 코칭받기</span></li>
                         </ul>
+                    </a>
                     </li>
                     <li class="no1-bar">
-                        <ul class="no1-bar-sose">
+                        <a href="">
+                        <ul class="no1-bar-sose" onmouseover="change1(this)" onmouseout="change2(this)">
                             <li class="no1-bar-sose-icon"><span class="material-icons md-48">auto_awesome</span></li>
                             <li class="no1-bar-sose-text-on 6"><span>다음 커리어 찾기</span></li>
                         </ul>
+                    </a>
                     </li>
                     <li class="no1-bar">
-                        <ul class="no1-bar-sose">
+                        <a href="">
+                        <ul class="no1-bar-sose" onmouseover="change1(this)" onmouseout="change2(this)">
                             <li class="no1-bar-sose-icon"><span class="material-icons md-48">apartment</span></li>
                             <li class="no1-bar-sose-text-on 7"><span>나만의 회사 찾기</span></li>
                         </ul>
+                    </a>
                     </li>
                     <li class="no1-bar">
-                        <ul class="no1-bar-sose">
+                        <a href="">
+                        <ul class="no1-bar-sose" onmouseover="change1(this)" onmouseout="change2(this)">
                             <li class="no1-bar-sose-icon"><span class="material-icons md-48">signal_cellular_alt</span></li>
                             <li class="no1-bar-sose-text-on 8"><span>직군별 연봉</span></li>
                         </ul>
+                    </a>
                     </li>
                     <li class="no1-bar">
-                        <ul class="no1-bar-sose">
+                        <a href="">
+                        <ul class="no1-bar-sose" onmouseover="change1(this)" onmouseout="change2(this)">
                             <li class="no1-bar-sose-icon"><span class="material-icons md-48">paid</span></li>
                             <li class="no1-bar-sose-text-on 9"><span>원티드 포인트</span></li>
                         </ul>
+                    </a>
                     </li>
                 </ul>
             </article>
@@ -190,9 +210,9 @@
             </article>
             <article class="main-no3">
                 <div class="main-no3s">
-                    <a href="#">#재택근무</a>
+                    <a class="main-text" href="#">#재택근무</a>
                     <ul class="no3-button">
-                        <li class="no3-hidden" >
+                        <li class="no3-hidden">
                             <img class="no3-img" src="./img/pot1.webp" alt="#">
                             <img class="no3-img" src="./img/pot2.webp" alt="#">
                             <img class="no3-img" src="./img/pot3.jpg" alt="#">
@@ -203,13 +223,151 @@
                             <img class="no3-img" src="./img/pot6.jfif" alt="#">
                         </li>
                     </ul>
+                    <a href="">포지션 더보기</a>
+                    <button></button>
+                    <button></button>
                 </div>
             </article>
-            <article class="main-no4"></article>
-            <article class="main-no5"></article>
-            <article class="main-no6"></article>
+            <article class="main-no4">
+                <div class="main-no4s">
+                    <a class="main-text" href="#">#일한만큼 받는 보상</a>
+                    <ul class="no4">
+                        <ul class="no4-list">
+                            <li class="no4-list1">
+                                <img src="" alt="#">
+                                <span>널위한문화 예술</span>
+                                <span>IT, 컨텐츠</span>
+                                <button>팔로우</button>
+                            </li>
+                        </ul>
+                        <ul class="no4-list">
+                            <li class="no4-list1">
+                                <img src="" alt="#">
+                                <span>인터브랜드</span>
+                                <span>사원지원</span>
+                                <button>팔로우</button>
+                            </li>
+                        </ul>
+                        <ul class="no4-list">
+                            <li class="no4-list1">
+                                <img src="" alt="#">
+                                <span>쎄듀</span>
+                                <span>제조</span>
+                                <button>팔로우</button>
+                            </li>
+                        </ul>
+                        <ul class="no4-list">
+                            <li class="no4-list1">
+                                <img src="" alt="#">
+                                <span>메디픽셀</span>
+                                <span>IT, 컨텐츠</span>
+                                <button>팔로우</button>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+            </article>
+            <article class="main-no5">
+                <div class="main-no5s">
+                    <span>테마로 모아보기</span>
+                    <ul>
+                        <li>
+                            <img src="" alt="">
+                            <span>성과급으로 보상하는 기업</span>
+                            <ul>
+                                <img src="" alt="">
+                                <img src="" alt="">
+                                <img src="" alt="">
+                                <img src="" alt="">
+                                <img src="" alt="">
+                                <span>+29</span>
+                            </ul>
+                        </li>
+                        <li>
+                            <img src="" alt="">
+                            <span>안정적인 흑자 기업</span>
+                            <ul>
+                                <img src="" alt="">
+                                <img src="" alt="">
+                                <img src="" alt="">
+                                <img src="" alt="">
+                                <img src="" alt="">
+                                <span>+1</span>
+                            </ul>
+                        </li>
+                        <li>
+                            <img src="" alt="">
+                            <span>주 4일 근무 기업</span>
+                            <ul>
+                                <img src="" alt="">
+                                <img src="" alt="">
+                                <img src="" alt="">
+                                <img src="" alt="">
+                                <img src="" alt="">
+                                <span>+16</span>
+                            </ul>
+                        </li>
+                        <div>
+                            <button></button>
+                            <button></button>
+                        </div>
+                    </ul>
+                </div>
+            </article>
+            <article class="main-no6">
+                <div class="main-no6s">
+                    <span>요즘 뜨는 포지션</span>
+                    <ul>
+                        <li>
+                            <span>합격 보상금 100만원</span>
+                            <img src="" alt="">
+                            <span>재무/회계 담당(대리급)</span>
+                            <span>케이웨더</span>
+                        </li>
+                        <li>
+                            <span>합격보상금 100만원</span>
+                            <img src="" alt="">
+                            <span>VAS사업팀 퍼포먼스 마케터</span>
+                            <span>핀브릿지</span>
+                        </li>
+                        <li>
+                            <span>합격보상금 100만원</span>
+                            <img src="" alt="">
+                            <span>콘텐츠 PM</span>
+                            <span>고이장례연구소</span>
+                        </li>
+                    </ul>
+                </div>
+            </article>
         </article>
     </main>
-    <footer></footer>
+    <footer>
+        <ul>
+            <img src="" alt="">
+            <div>
+                <a href="#">기업소개</a>
+                <a href="#">광고문의</a>
+                <a href="#">고객샌터</a>
+                <a href="#">이용약관</a>
+                <a href="#">블로그</a>
+                <a href="#">개인정보 처리방침</a>
+            </div>
+        </ul>
+        <div>
+            <span>(주)원티드랩</span><span>대표이사 이복기</span>
+            <span>서울특별시 송파구 올림픽로 300, 롯데월드타워 35층 </span> <span>전화번호: 02-539-7118</span>
+            <span>사업자등록번호: 299-86-00021</span><span>통신판매번호: 2020-서울송파-3147</span><span>유료직업소개사업등록번호: (국내) 제2020-3230259-14-5-00018호</span>
+            <div>
+                <a href="">채용서비스 문의</a>
+                <a href="">윈티드스페이스 문의</a>
+                <a href="">윈티드긱스 문의</a>
+                <a href="">프리온보딩 문의</a>
+                <a href="">취업지원시스템 문의</a>
+                <a href="">IR 문의</a>
+            </div>
+            
+        </div>
+        
+    </footer>
 </body>
 </html>
