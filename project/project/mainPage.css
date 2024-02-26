@@ -234,6 +234,49 @@ main a{
 
 
 
+/* 번외 */
+
+.main-no3-tag{
+    justify-content: space-between;
+    display: flex;
+}
+.main-text{
+    font-size: 24px;
+    font-family: 'SejonghospitalBold';
+    color:black;
+}
+.main-tag{
+    display: flex;
+}
+.main-point{
+    display: flex;
+    margin-left: 14px;
+    padding: 0;
+}
+main a{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    color: rgb(131, 131, 131);
+}
+
+.main-point1-button,
+.main-point2-button{
+    border: 1px solid rgb(131, 131, 131);
+    background-color: white;
+    height: 24px;
+    width: 32px;
+}
+.main-point1-button{
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    color: rgb(131, 131, 131);
+}
+.main-point2-button{
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    color: rgb(131, 131, 131);
+}
 
 
 /* main-no3 */
@@ -242,11 +285,6 @@ main a{
 }
 .main-no3s{
     position: relative;
-}
-.main-text{
-    font-size: 24px;
-    font-family: 'SejonghospitalBold';
-    color:black;
 }
 .no3-button{
     width: 100%;
@@ -260,10 +298,64 @@ main a{
     justify-content: center;
 }
 .no3-img{
-    width: 300px;
+    width: 330px;
     height: 200px;
     margin: 0px auto;
     border-radius: 10px;
 }
+.nno3-tag-text{
+    margin: 5px 0px;
+}
+
+
+
+
 
 /* main-no4 */
+main p{
+    margin: 0;
+    padding: 0;
+}
+
+.main-no4{
+    margin-top: 40px;
+}
+.no4{
+    margin: 0;
+    padding: 10px 0px;
+}
+.no4-list{
+    padding: 0;
+    margin: 0;
+}
+.no4-list1,.no4-list2,
+.no4-list3,.no4-list4{
+    display: inline-block;
+    padding: 7px 0px;
+    width: 300px;
+}
+.no4-img-text{
+    display: flex;
+    margin:;
+}
+.no4-img{
+    height: 56px;
+    width: 56px;
+    border-radius: 10px;
+    
+}
+.no4-text{
+}
+
+
+
+
+/* main-no5 */
+.main-no5{
+    margin-top: 40px;
+}
+
+/* main-no6 */
+.main-no6{
+    margin-top: 40px;
+}
