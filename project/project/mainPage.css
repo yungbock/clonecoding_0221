@@ -236,7 +236,7 @@ main a{
 
 /* 번외 */
 
-.main-no3-tag{
+.main-tag{
     justify-content: space-between;
     display: flex;
 }
@@ -295,21 +295,47 @@ main a{
 }
 .no3-hidden{
     display: flex;
-    justify-content: center;
+    width: 100%;
+    justify-content:space-between;
 }
 .no3-img{
-    width: 330px;
+    width: 320px;
     height: 200px;
-    margin: 0px auto;
     border-radius: 10px;
 }
-.nno3-tag-text{
+.no3-tag-text{
     margin: 5px 0px;
 }
 
 
 
 
+
+.main-text1{
+    font-weight: bolder;
+    position: relative;
+    margin-top: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.main-text2{
+    color:  rgb(131, 131, 131);
+    font-size: 12px;
+    position: relative;
+    margin-top: 10px;
+}
+.no4-button{
+    margin-right: 0px;
+    height: 32px;
+    width: 62px;
+    border: 1px solid rgb(131, 131, 131);
+    border-radius: 8px;
+    position: relative;
+    top: 10px;
+}
 
 /* main-no4 */
 main p{
@@ -326,17 +352,19 @@ main p{
 }
 .no4-list{
     padding: 0;
-    margin: 0;
+    margin: 0 0 10px;
 }
 .no4-list1,.no4-list2,
 .no4-list3,.no4-list4{
     display: inline-block;
     padding: 7px 0px;
-    width: 300px;
+    margin: 0px 14px;
+    width: 30%;
+    border-bottom: 1px solid gainsboro;
 }
 .no4-img-text{
     display: flex;
-    margin:;
+    justify-content: space-between;
 }
 .no4-img{
     height: 56px;
@@ -345,15 +373,65 @@ main p{
     
 }
 .no4-text{
+    margin-left: 8px;
+    margin-right: auto;
 }
 
 
 
 
 /* main-no5 */
+.main-banner1{
+    display: flex;
+    margin: 10px 0px;
+    padding: 0px;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+.main-banner2{
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+}
+.main-banner3{
+    display: flex;
+    flex-direction: column;
+}
+.no5-tag1,.no5-tag2,.no5-tag3{
+     display: flex;
+} 
 .main-no5{
     margin-top: 40px;
 }
+.no5-img-text{
+    position: absolute;
+    transform: translate(10%, 700%);
+    color: white;
+    font-weight: bolder; 
+}
+.no5-img1,
+.no5-img2,
+.no5-img3{
+    width: 320px;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.no5-tag1-b{
+    border: 1px solid gainsboro;
+    padding: 32px;
+}
+.no5-b-img{
+    height: 32px;
+    width: 32px;
+    padding-right: 10px;
+}
+
+
+
+
+
 
 /* main-no6 */
 .main-no6{
