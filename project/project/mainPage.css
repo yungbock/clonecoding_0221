@@ -178,8 +178,10 @@ main a{
 
 
 /* main 2번째 */
-/* .main-no2{
-} */
+.main-no2{
+    margin-top: 40;
+    padding: 0;
+} 
 .main-no2s{
     position: relative;
     display: flex;
@@ -187,7 +189,7 @@ main a{
     width: 1000px;
     height: 300px;
     overflow: hidden;
-    margin: 0 auto;
+    margin: 40px auto 0;
 
 }
 .no2{
@@ -398,7 +400,7 @@ main p{
     display: flex;
     flex-direction: column;
 }
-.no5-tag1,.no5-tag2,.no5-tag3{
+.no5-tag{
      display: flex;
 } 
 .main-no5{
@@ -410,24 +412,30 @@ main p{
     color: white;
     font-weight: bolder; 
 }
-.no5-img1,
-.no5-img2,
-.no5-img3{
+.no5-img{
     width: 320px;
     height: 200px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-.no5-tag1-b{
+.no5-tag-b{
     border: 1px solid gainsboro;
-    padding: 32px;
+    padding: 16px;
 }
 .no5-b-img{
     height: 32px;
     width: 32px;
-    padding-right: 10px;
+    margin-right: 10px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
 }
-
+.no5-number{
+    position: relative;
+    top: -10px;
+    color :rgb(131, 131, 131);
+    font-weight: bolder;
+    font-size: 12px;
+}
 
 
 
