@@ -1,0 +1,264 @@
+body{
+    margin: 0;
+    padding: 0;   
+}
+header,
+main,
+footer{
+    margin: 0;
+    padding: auto;
+    position: relative;
+    white-space: nowrap
+}
+p{
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+main{
+    background-color: rgb(220, 220, 220);
+    padding-bottom: 40px;
+}
+.main-section{
+    margin: 0px auto;
+    padding: 40px 0px 0px;  /* header와 거리 */
+    justify-items: center;  /* section 가운데로 정렬 */
+    display: flex;          /* */
+    flex-direction: row;    /* 가로로 정렬 */
+    width: 1000px;          
+}
+.login{ /* 회원가입 가운데로 정렬 */
+    justify-content: center;
+    margin: auto;
+}
+h1{
+    font-size: 36px;
+    margin: 30px auto;
+    padding: 0px;
+}
+.login-page-a{
+    background-color: white;
+    margin: 20 auto 0px;
+    padding: 40px;
+    border: 1px solid dimgray;
+    border-radius: 10px;
+}
+
+
+/* 이름 이메일 비밀번호 적는 곳 */
+.name,.em,.psw{
+    margin: 0px;
+    padding: 0px;
+}
+
+.login-page{
+    margin: 0px;
+    padding: 0px;
+}
+.name-text{
+    margin: 0;
+    padding: 0;
+}
+.login-page input{  
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid gray;
+    margin: 10px auto;
+    padding: 0px;
+}
+.login-page input::placeholder{
+    color: rgb(200, 200, 200);
+    font-weight: bolder;
+    padding: 12px;
+}
+
+
+/* 체크 박스 */
+.login-button{
+    margin: 0;
+    padding: 0;
+}
+.button-A,
+.button-B{
+    display: flex;
+    justify-content: space-between;
+}
+.input-check{  
+    width: 24px;
+    border: 1px solid gray;
+    padding: 0px;
+}
+.textA{
+    display: flex;
+}
+.button-B p{
+    font-size: 12px;
+}
+.button-B a{
+    font-size: 12px;
+    display: block;
+    justify-content: center;
+    margin: 10px 0px;
+    color :gray;
+}
+.button-C{
+    color:rgb(200, 200, 200);
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    margin-left: 10px;
+}
+
+/* 확인버튼 */
+.login-main{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttonA,
+.buttonB{
+    width: 100%;
+    height: 50px;
+    margin: 10px;
+    color: white;
+    border-radius: 10px;
+    border: white;
+    font-weight: bolder;
+    font-size: 16px;
+}
+.buttonA{
+    background-color: #00a18d;
+}
+.buttonB{
+    background-color: #0d64d6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttonC{
+    margin: 20px;
+    text-decoration: none;
+    color: gray;
+}
+
+
+/* header 파트 */
+.header-section{
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 72px;
+}
+header a{
+    text-decoration: none;
+    color : black;
+    font-weight: bolder;
+}
+.header-img{
+    margin-right: 20px;
+}
+.header-a{
+    margin-right: 10px;
+}
+.header-b{
+    margin-left: 10px;
+}
+header button{
+    width: 80px;
+    height: 36px;
+    color: white;
+    background-color: #00c7ae;
+    border-radius: 10px;
+    border: white;
+    font-weight: bolder;
+}
+.header-input{
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #fafafa;
+    width: 15%;
+    height: 50%;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    padding: 1px  10px;
+}
+/* 구글아이콘 */
+.material-symbols-outlined {
+    margin-right: 10px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.header-input-text{
+    height: 100%;
+    width: 100%;
+    background-color: #fafafa;
+    border: #fafafa;
+}
+
+
+
+.footer-section{
+    margin: 20px auto;
+    display: f;
+    justify-content: center;
+}
+.footer-m,
+.footer-t{
+    display: flex;
+    justify-content: center;
+}
+.footer-A{
+    margin: 0;
+}
+.footer-A p{
+    margin: 20px auto 0px;
+}
+.number{
+    color: #00c7ae;
+    font-weight: bolder;
+    font-size: 24px;
+}
+footer p, a{
+    color: #737373;
+    text-decoration: none;
+}
+footer button {
+    background-color: #00c7ae;
+    border: white;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 140px;
+    height: 40px;
+    padding: 0px;
+}
+.footer-A-b{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer button span{
+    color: white;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+}
+
+footer ul li{
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    font-size: 14px;
+}
