@@ -218,6 +218,36 @@ main a{
     margin: 40px auto 0;
 
 }
+
+.prev, 
+.next {
+    position: absolute;    
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 25px;
+    top: 130px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.prev:hover,
+.next:hover{
+    background-color: beige;
+}
+
+.prev {
+    left : 0px;
+    padding-right: 5px;
+}
+
+.next {
+    right: 0px;
+    padding-left: 5px;
+}
+
+
 .no2{
     position: absolute;
     display: flex;
