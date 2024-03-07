@@ -8,37 +8,11 @@ header a{
     text-decoration-line:none;
     color: rgb(131, 131, 131);
 }
-header{
-    position: relative;
-    flex-direction: row;
-    width: 100%;
-    height: 60px;
-    border-bottom: 1px solid rgb(200, 200, 200);
-    display: flex;
-    justify-content: center;
-    font-size: 12px;
-    font-weight: bold;
-}
 li{
     list-style: none;
 }
-.header-Logo{ /*임시용*/
-    object-fit: contain;
-    width: 32px;
-}
-.header-Bar{
-    margin: 0;
-    padding: 0;
-    margin-left: 60px;
-    display: flex;
-}
-.header-Bar-Text-drop,  /*drop과 그냥 text 공통 부분*/
-.header-Bar-Text{
-    position: relative;
-    top:35%; 
-    margin-left: 0px;
-    margin-right: 30px;
-}
+
+
 
 
 
@@ -69,12 +43,46 @@ button{
     /* 페이지 줄여도 글씨가 한쪽으로 안뭉치게 하는 작업 */
 }
 
+header{
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid rgb(200, 200, 200);
+    display: flex;
+    font-size: 12px;
+    font-weight: bold;
+}
+.header-Logo{ 
+    object-fit: contain;
+    width: 32px;
+}
+.header-Bar{
+    margin: 0;
+    padding: 0;
+    margin-left: 60px;
+    display: flex; 
+}
+.header-Bar-Text-drop,  
+.header-Bar-Text{
+    position: relative;
+    top:35%; 
+    margin-left: 0px;
+    margin-right: 30px;
+}
 
 
-
-
-
-
+#header-main{
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+    align-items: center;
+}
+/* "header-Bar"> <!--메인 바-->
+"header-Drop"> <!--서브 바--> */
+.header-Bar > .header-Bar-click, .header-Drop{
+    float:left;
+}
 
 
 
@@ -82,26 +90,40 @@ button{
 
 /* header-Drop css*/
 .header-Drop{
-    display: flex;
+    text-align: center;
+    display: block;
 }
-.material-symbols-outlined{ /* 메뉴 위치조정*/
+.material-symbols-outlined{  /*메뉴 위치조정*/
     position: relative;
     top:30%; 
 }
-
 .header-Bar-Text-drop{
     display: inline-block;
+} 
+
+.drop-down{/* 드롭박스 생성 */
+    position: absolute;
+    background-color: blue;
+    margin: 0;
+    padding: 0;
+
+    opacity: 0;
+    visibility: hidden;
 }
-.drop-down{ /* 드롭박스 생성 */
-    display: none;
+.drop-down > li{
+    padding: 12px 22px;
 }
-.header-Bar-Text-drop:hover .drop{
-    width: 500px;
-    height: 100px;
-    background-color: black;
+/* .header-Bar-click > li > a{
+    color: black;
+}  */
+.header-Drop > li:hover .drop-down{
+    opacity: 1;
+    visibility: visible;
 }
-/*로그인 회원가입*/
-.header-Bar-right{
+
+
+/* 로그인 회원가입*/
+ .header-Bar-right{
     display: flex;
     justify-content: center;
     margin-left: 60px;
@@ -142,7 +164,7 @@ button{
 }
 .login1{
     color: blue;
-}
+} 
 
 
 
@@ -318,19 +340,26 @@ main a{
     color: rgb(131, 131, 131);
 }
 
+
+
+
 .main-point1-button,
+.main-point2,
+.main-point1,
 .main-point2-button{
     border: 1px solid rgb(131, 131, 131);
     background-color: white;
     height: 24px;
     width: 32px;
 }
-.main-point1-button{
+.main-point1-button,
+.main-point1{
     border-top-left-radius: 7px;
     border-bottom-left-radius: 7px;
     color: rgb(131, 131, 131);
 }
-.main-point2-button{
+.main-point2-button,
+.main-point2{
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
     color: rgb(131, 131, 131);
@@ -340,16 +369,28 @@ main a{
 /* main-no3 */
 .main-no3{
     margin-top: 40px;
+    
+    position: relative;
+    display: flex;
+    width: 1000px;
+    padding: 0;
 }
 .main-no3s{
     position: relative;
+    width: 100%;
+}
+
+
+
+.no3-hidden{
+    display: flex;
+    justify-items: space-between;
+    
 }
 .no3-button{
-    width: 100%;
-    height: 200px;
-    margin: 10px 0px;
+    margin: 0;
     padding: 0px;
-    overflow: hidden;
+    display: flex;
 }
 .no3-hidden{
     display: flex;
@@ -455,9 +496,23 @@ main p{
 .main-banner3{
     display: flex;
     flex-direction: column;
+
 }
+
+/* 사진만 크기 확대 */
+.main-banner3 .no5-img{
+    transition: all 0.2s linear;
+    height: 200px;
+}
+.main-banner3:hover .no5-img{
+    transform: scale(1.1);
+
+}
+
+
 .no5-tag{
      display: flex;
+     overflow: hidden;
 } 
 .main-no5{
     margin-top: 40px;
@@ -478,6 +533,7 @@ main p{
     border: 1px solid gainsboro;
     padding: 16px;
 }
+
 .no5-b-img{
     height: 32px;
     width: 32px;
@@ -497,6 +553,9 @@ main p{
 
 
 
+
+
+
 /* main-no6 */
 .main-no6{
     margin-top: 40px;
@@ -506,23 +565,34 @@ main p{
     margin-right: 10px;
     display: flex;
     flex-direction: column;
-    padding: 0px;
-    
+    padding: 0px;  
+}
+.no6-tag img{
+    transition: all 0.2s linear;
+}
+.no6-tag:hover img{
+    transform: scale(1.1);
 }
 .no6-img{
     width: 220px;
     height: 180px;
     display: flex;
+    overflow: hidden;
 }
 .no6-img-text{
-    display: inline-flex;
     position: absolute;
     transform: translate(10%, 50%);
     color: white;
     font-weight:bolder;
     font-size: 14px;
-    white-space: nowrap;
 }
+
+/* .no5-img-text{
+    position: absolute;
+    transform: translate(10%, 700%);
+    color: white;
+    font-weight: bolder; 
+} */
 .no6-img-img{
     display: inline-flexbox;
     width: 220px;

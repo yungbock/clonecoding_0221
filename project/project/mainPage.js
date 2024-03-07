@@ -16,6 +16,29 @@ function change2(x){
 }
 
 
+// 메인 4번째 onclick
+function changeColor1(x){
+    x.style.backgroundColor = "rgb(200, 200,200)";
+}
+function changeColor2(x){
+    x.style.backgroundColor = "white";
+}
+const changeColor = document.getElementsByClassName("no4-img-text");
+const changeButton = document.getElementsByClassName("no4-button");
+
+// function chage(no4List1) {
+//     if($(no4-list1)){
+//         function changeColor1(x){
+//             x.style.backgroundColor = "rgb(200, 200,200)";
+//         }
+//         function changeColor2(x){
+//             x.style.backgroundColor = "white";
+//         }
+//     }
+//     return no4List1 = changeColor1,changeColor2
+// }
+
+
 // 베너 2번 생성
 let $main2 = $(".no2");
 
@@ -99,7 +122,7 @@ let $no3Hidden = $(".no3-hidden");
 // 베너 넓이 
 // let mainWidth = 1000;
 // 슬라이드 이미지 인덱스 번호
-// let currentIdx = 0;위에 있는 값과 같으니 따로 추가 x
+let currentIdx3 = 0;
 // 총 슬라이드 이미지 수
 let slideCnt3 = $no3Hidden.length;  
  
@@ -108,20 +131,31 @@ console.log(`sildeCnt3 : ${slideCnt3}`);
 // main-point1-button <방향   main-point2-button > 방향
 
 //오른쪽으로 이동
-$(".main-point2-button").on("click", moveNext2);
-function moveNext2(){
+$(".main-point2").on("click", moveNext3);
+function moveNext3(){
     console.log(`2번째 배너 다음 클릭`);
-    currentIdx++;
-    // console.log(`currentIdx : ${currentIdx}`);
+    currentIdx3++;
+    console.log(`currentIdx3 : ${currentIdx3}`);
 
     $no3Button.css("left", -(currentIdx*mainWidth));
-    // $no3Button.css("transition", )
-    checkEnd();
+    $no3Button.css("transition", "0.5s ease");
+    checkEnd3();
 }
-$(".main-point1-button").on("click", function(){
+function moveFirst() {
+    currentIdx3 = 0;
+    checkEnd3();
+    $main2.css("transition", "none");
+    $main2.css("transition", "0.5s ease");
+    $main2.css("left", 0);
+}
+
+$(".main-point1").on("click", function(){
     console.log(`슬라이드 이전 클릭`);
-    currentIdx--;
+    currentIdx3--;
+    console.log(`currentIdx3 : ${currentIdx3}`);
 
     $no3Button.css("left", -(currentIdx * mainWidth));
-    checkEnd();
+    $main2.css("transition", "0.5s ease");
+    checkEnd3();
 });
+checkEnd3();
